@@ -1,0 +1,26 @@
+{
+  "name": "elgeladon-server-react-mondodb",
+  "version": "1.0.0",
+  "description": "API desenvolvida com fins acadêmicos e disponibilidade durante o módulo 3 do curso de Full Stack da Blue Edtech",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.16",
+    "prettier": "^2.6.2",
+    "sucrase": "^3.21.0"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "swagger-ui-express": "^4.4.0"
+  }
+}
