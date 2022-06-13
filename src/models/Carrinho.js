@@ -1,11 +1,11 @@
 import mongoose from 'mongoose';
 
 const CarrinhoSchema = new mongoose.Schema({
-  paletaId: {
-    type: String,
+  nome: {
+    type: Number,
     require: true,
   },
-  quatidade: {
+  quantidade: {
     type: Number,
     require: true,
   },

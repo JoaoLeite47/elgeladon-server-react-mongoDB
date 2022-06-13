@@ -15,9 +15,15 @@ export const findAllCarrinhoController = async (req, res) => {
 
 export const createManyItemsCarrinhoController = async (req, res) => {
   // cria um carrinho
-  const carrinho = req.body; // pega o corpo da requisição
-  const NewCarrinho = await createManyItemsCarrinhoService(carrinho); // cria um novo carrinho
-  res.status(201).send(NewCarrinho); // retorna o novo carrinho
+  try {
+    const carrinho = req.body; // pega o corpo da requisição
+    const NewCarrinho = await createManyItemsCarrinhoService(carrinho); // cria um novo carrinho
+    res.status(201).send(NewCarrinho); // retorna o novo carrinho
+  } catch {
+    console.log((err) => {
+      message;
+    });
+  }
 };
 
 export const deleteAllCarrinhoController = async (req, res) => {

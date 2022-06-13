@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 export const connectToDatabase = () => {
   //conexão com o banco de dados
   mongoose
-    .connect('mongodb://localhost:27017/paletas-db', {
+    .connect(process.env.DATABASE_URI, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     }) //conecta ao banco de dados

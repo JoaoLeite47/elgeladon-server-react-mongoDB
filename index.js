@@ -6,6 +6,10 @@ import { route } from './src/routes/paletas.route.js';
 
 import { connectToDatabase } from './src/database/database.js';
 
+import dotenv from "dotenv"
+
+dotenv.config(); // carrega as variáveis de ambiente
+
 const app = express(); // instancia do express
 
 connectToDatabase(); // chama a função de conexão com o banco de dados
@@ -16,7 +20,7 @@ app.use(cors()); // permite que as rotas sejam acessadas pelo frontend
 
 app.use('/paletas', route); // define a rota para acesso aos dados
 
-const port = 3001; // porta padrão
+const port = process.env.PORT || 3001;; // porta padrão
 
 app.listen(port, () => {
   // inicia o servidor
