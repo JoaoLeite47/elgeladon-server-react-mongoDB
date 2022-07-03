@@ -1,5 +1,7 @@
 # El Geladon API
 API desenvolvida com fins acadêmicos e disponibilidade durante o módulo 3 do curso de Full Stack da Blue Edtech
+![1656891596748](https://user-images.githubusercontent.com/100146681/177061161-ce1b693b-f812-4359-a1d4-428ed3cfb000.png)
+
 
 
 ## Detalhes 
